@@ -105,7 +105,7 @@ window.addEventListener('DOMContentLoaded', () => {
         isGameActive = true;
         announcer.classList.add('hide');
 
-        if (currentPlayer === 'O') {
+        if (currentPlayer === 'Θ') {
             changePlayer();
         }
 
