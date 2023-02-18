@@ -60,19 +60,19 @@ window.addEventListener('DOMContentLoaded', () => {
     const announce = (type) => {
         switch(type){
             case PLAYERO_WON:
-                announcer.innerHTML = 'Player <span class="playerO">O</span> Won';
+                announcer.innerHTML = 'Ο παίκτης με το <span class="playerO">Θ</span> κέρδισε!';
                 break;
             case PLAYERX_WON:
-                announcer.innerHTML = 'Player <span class="playerX">X</span> Won';
+                announcer.innerHTML = 'Ο παίκτης με το <span class="playerX">Α</span> κέρδισε!';
                 break;
             case TIE:
-                announcer.innerText = 'Tie';
+                announcer.innerText = 'Ισοπαλία';
         }
         announcer.classList.remove('hide');
     };
 
     const isValidAction = (tile) => {
-        if (tile.innerText === 'X' || tile.innerText === 'O'){
+        if (tile.innerText === 'Α' || tile.innerText === 'Θ'){
             return false;
         }
 
